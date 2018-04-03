@@ -39,11 +39,17 @@ namespace NotesApplicationCSC635.Repository
             }
             context.SaveChanges();
 
+            var user = new User();
+            user.ID = 1;
+
+            var category = new Category();
+            category.ID = 1;
+
             var notes = new Notes[]
             {
                 new Notes{
-                        User=users[0].ID,
-                        Category=categories[0].ID,
+                        User=user,
+                        Category=category,
                         Note ="This is a note.",
                         Title ="New Note",
                         CreatedOn =DateTime.Parse("2005-09-01"),

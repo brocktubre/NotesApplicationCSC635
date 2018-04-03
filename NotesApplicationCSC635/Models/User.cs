@@ -11,10 +11,5 @@ namespace NotesApplicationCSC635.Models
         public string Email { get; set; }
         public string Name { get; set; }
         public DateTime CreatedOn { get; set; }
-
-        public static implicit operator User(int v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

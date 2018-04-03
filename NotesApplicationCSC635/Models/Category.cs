@@ -13,10 +13,5 @@ namespace NotesApplicationCSC635.Models
     {
         public int ID { get; set; }
         public Name? Name { get; set; }
-
-        public static implicit operator Category(int v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
