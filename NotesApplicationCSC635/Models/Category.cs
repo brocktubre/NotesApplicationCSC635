@@ -7,7 +7,9 @@ namespace NotesApplicationCSC635.Models
 {
     public enum Name
     {
-        BD, TD, IMP
+        BD, // Birthday
+        TD, // Todo
+        IMP // Important
     }
     public class Category
     {

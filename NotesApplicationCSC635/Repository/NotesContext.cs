@@ -11,6 +11,7 @@ namespace NotesApplicationCSC635.Repository
     {
         public NotesContext(DbContextOptions<NotesContext> options) : base(options)
         {
+
         }
 
         public DbSet<Category> Categories { get; set; }

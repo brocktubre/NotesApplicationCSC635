@@ -2,10 +2,10 @@ C:\Users\brocktubre\Projects\NotesApplicationCSC635\NotesApplicationCSC635\bin\D
 C:\Users\brocktubre\Projects\NotesApplicationCSC635\NotesApplicationCSC635\bin\Debug\netcoreapp2.0\NotesApplicationCSC635.runtimeconfig.json
 C:\Users\brocktubre\Projects\NotesApplicationCSC635\NotesApplicationCSC635\bin\Debug\netcoreapp2.0\NotesApplicationCSC635.runtimeconfig.dev.json
 C:\Users\brocktubre\Projects\NotesApplicationCSC635\NotesApplicationCSC635\bin\Debug\netcoreapp2.0\NotesApplicationCSC635.dll
+C:\Users\brocktubre\Projects\NotesApplicationCSC635\NotesApplicationCSC635\bin\Debug\netcoreapp2.0\NotesApplicationCSC635.pdb
 C:\Users\brocktubre\Projects\NotesApplicationCSC635\NotesApplicationCSC635\obj\Debug\netcoreapp2.0\NotesApplicationCSC635.csprojResolveAssemblyReference.cache
 C:\Users\brocktubre\Projects\NotesApplicationCSC635\NotesApplicationCSC635\obj\Debug\netcoreapp2.0\NotesApplicationCSC635.csproj.CoreCompileInputs.cache
 C:\Users\brocktubre\Projects\NotesApplicationCSC635\NotesApplicationCSC635\obj\Debug\netcoreapp2.0\NotesApplicationCSC635.AssemblyInfoInputs.cache
 C:\Users\brocktubre\Projects\NotesApplicationCSC635\NotesApplicationCSC635\obj\Debug\netcoreapp2.0\NotesApplicationCSC635.AssemblyInfo.cs
-C:\Users\brocktubre\Projects\NotesApplicationCSC635\NotesApplicationCSC635\bin\Debug\netcoreapp2.0\NotesApplicationCSC635.pdb
 C:\Users\brocktubre\Projects\NotesApplicationCSC635\NotesApplicationCSC635\obj\Debug\netcoreapp2.0\NotesApplicationCSC635.dll
 C:\Users\brocktubre\Projects\NotesApplicationCSC635\NotesApplicationCSC635\obj\Debug\netcoreapp2.0\NotesApplicationCSC635.pdb

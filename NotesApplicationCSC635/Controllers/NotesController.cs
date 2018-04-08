@@ -21,11 +21,14 @@ namespace NotesApplicationCSC635.Controllers
             _context = context;
         }
 
-        // GET: api/Notes
+        // GET: api/v1/notes
         [HttpGet]
         public IEnumerable<Notes> GetNotes()
         {
-            return _context.Notes;
+            var list = _context.Notes
+                       .Include(n => n.User)
+                       .Include(n => n.Category).ToList();
+            return list;
         }
 
         // GET: api/v1/notes/5
