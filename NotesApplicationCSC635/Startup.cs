@@ -25,12 +25,22 @@ namespace NotesApplicationCSC635
         {
             services.AddDbContext<NotesContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            // Add service and create Policy with options
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();
@@ -41,8 +51,8 @@ namespace NotesApplicationCSC635
                 app.UseExceptionHandler("/Error");
             }
 
+            app.UseCors("CorsPolicy");
             app.UseStaticFiles();
-
             app.UseMvc();
         }
     }

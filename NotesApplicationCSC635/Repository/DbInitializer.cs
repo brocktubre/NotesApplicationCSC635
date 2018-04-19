@@ -50,7 +50,9 @@ namespace NotesApplicationCSC635.Repository
         {
             var categories = new Category[]
              {
-                new Category{Name=Name.IMP}
+                new Category{Name="Important"},
+                new Category{Name="Birthday"},
+                new Category{Name="Todo"}
              };
             foreach (Category c in categories)
             {
