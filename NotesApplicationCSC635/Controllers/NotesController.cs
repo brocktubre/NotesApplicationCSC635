@@ -67,6 +67,11 @@ namespace NotesApplicationCSC635.Controllers
             {
                 return BadRequest();
             }
+            var user = _context.Users.Find(notes.User.ID);
+            var category = _context.Categories.Find(notes.Category.ID);
+
+            notes.User = user;
+            notes.Category = category;
 
             _context.Entry(notes).State = EntityState.Modified;
 
