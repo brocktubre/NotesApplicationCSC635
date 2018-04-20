@@ -112,8 +112,16 @@ namespace NotesApplicationCSC635.Controllers
                 return NotFound();
             }
 
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
+            try
+            {
+
+                _context.Users.Remove(user);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException e)
+            {
+                return StatusCode(Microsoft.AspNetCore.Http.StatusCodes.Status405MethodNotAllowed);
+            }
 
             return Ok(user);
         }
