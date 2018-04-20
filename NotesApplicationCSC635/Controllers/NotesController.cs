@@ -32,6 +32,7 @@ namespace NotesApplicationCSC635.Controllers
         }
 
         // GET: api/v1/notes/5
+        // Need to add the Include here.
         [HttpGet("{id}")]
         public async Task<IActionResult> GetNotes([FromRoute] int id)
         {
@@ -40,7 +41,10 @@ namespace NotesApplicationCSC635.Controllers
                 return BadRequest(ModelState);
             }
 
-            var notes = await _context.Notes.SingleOrDefaultAsync(m => m.ID == id);
+            var notes = await _context.Notes
+                                .Include(n => n.User)
+                                .Include(n => n.Category)
+                                .SingleOrDefaultAsync(m => m.ID == id);
 
             if (notes == null)
             {
