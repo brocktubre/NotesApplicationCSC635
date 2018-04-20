@@ -94,7 +94,20 @@ namespace NotesApplicationCSC635.Controllers
                 return BadRequest(ModelState);
             }
 
-            _context.Notes.Add(notes);
+            var user = _context.Users.Find(notes.User.ID);
+            var category = _context.Categories.Find(notes.Category.ID);
+
+            var noteToCreate = new Notes
+            {
+                User = user,
+                Category = category,
+                Note = notes.Note,
+                Title = notes.Title,
+                CreatedOn = notes.CreatedOn,
+                IsDeleted = notes.IsDeleted
+            };
+
+            _context.Notes.Add(noteToCreate);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetNotes", new { id = notes.ID }, notes);
